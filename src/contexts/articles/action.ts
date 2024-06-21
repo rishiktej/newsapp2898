@@ -7,11 +7,11 @@ import {
 export const fetchArticles = async (
   dispatch: ArticleDispatch,
 ) => {
-  console.log("hello");
   try {
     dispatch({ type: ArticleListAvailableAction.FETCH_ARTICLE_REQUEST });
 
-    const url = `https://newsapi.org/v2/top-headlines?country=in&apiKey=7f007eb748d14a5a8979d9f4e2b85a21`;
+    const url = `https://newsapi.org/v2/top-headlines?country=in&apiKey=${API_KEY}`;
+    console.log("Fetching articles from URL:", url);
     
     fetch(url)
       .then(response => {

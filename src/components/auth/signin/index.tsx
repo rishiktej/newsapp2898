@@ -49,7 +49,8 @@ const Login: React.FC = () => {
           <div className="text-center">
             <div className="mt-2">
               <h3 className="text-gray-800 text-xl font-semibold sm:text-2xl">
-                Welcome Back
+                WELCOME!!
+                SIGNIN
               </h3>
             </div>
           </div>

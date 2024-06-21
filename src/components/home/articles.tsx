@@ -61,7 +61,7 @@ export default function ArticleDataListItems() {
                 <Text className="text-left " fontSize="sm">
                   Summary: {article.description}
                 </Text>
-                <Link to={`${article.author}`} className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600" >
+                <Link to={`${article.author}`} className="underline text-blue-800 hover:text-blue-800 visited:text-purple-600" >
                   click here for detailed view:
                 </Link>
               </CardBody>

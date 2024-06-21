@@ -9,7 +9,7 @@ import Articleview from "../components/home/articleview";
 const router = createBrowserRouter([
   {
     path:"/",
-    element: <Login />,
+    element: <Navigate to="/login" replace />,
   },
   {
     path: "/login",
