@@ -10,13 +10,13 @@ export const fetchArticles = async (
   try {
     dispatch({ type: ArticleListAvailableAction.FETCH_ARTICLE_REQUEST });
 
-    const url = `https://newsapi.org/v2/top-headlines?country=in&apiKey=${API_KEY}`;
+    const url = `https://newsapi.org/v2/everything?q=Apple&from=2024-06-21&sortBy=popularity&apiKey=${API_KEY}`;
     console.log("Fetching articles from URL:", url);
     
     fetch(url)
       .then(response => {
         if (!response.ok) {
-          throw new Error("Failed to fetch Article");
+          throw new Error("Failed to fetch Article Status");
         }
         return response.json();
       })
